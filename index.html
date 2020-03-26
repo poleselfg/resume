@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script
+      src="https://kit.fontawesome.com/35803b9240.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>$('.navTrigger').click(function () {
+      $(this).toggleClass('active');
+      console.log("Clicked menu");
+      $("#mainListDiv").toggleClass("show_list");
+      $("#mainListDiv").fadeIn();
+  
+  });
+  </script>
+  <script>// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});</script>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Port">Portfolio</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+        <span class="navTrigger">
+          <i>About</i>
+          <i>Skills</i>
+          <i>Portfolio</i>
+          <i>Contact</i>
+        </span>
+      </div>
+    </nav>
+
+    <section class="home">
+      <h1 class="line-1 ">Hi! I'm Federico,</h1>
+
+      <h2 class="line-2 anim-typewriter">A Front end Developer...</h2>
+    </section>
+
+    <div class="text-center aboutus">
+      <div class="separate"></div>
+      <h3 id="About">About Me</h3>
+    </div>
+      <div class="serparate"></div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container animated jackInTheBox">
+          <p class="lead">
+            <i class="fas fa-quote-left"></i> I am a native of Buenos Aires,
+            Argentina. although also an Italian citizen, my interest in
+            computers was born as a child, dismantling and repairing every
+            computer that crossed my hands, there I discovered that with enough
+            dedication and perseverance could learn anything that I wanted,
+            during the following years I was always dedicated to computer
+            science, electronics, networks and computer security, which gives me
+            a fairly complete knowledge. always the programming was a hoobie.
+            until one I decided to turn my passion for the development in my
+            means of life, of there in more never stop forming me, and to
+            continue growing, if it had to describe my way of working in a word,
+            it would be PASSION... <i class="fas fa-quote-right"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+    <div class="text-center aboutus">
+      <div class="separate"></div>
+      <h3 id="Skills">Skills</h3>
+    </div>
+    <div class="separate"></div>
+    <div class="row animated bounceInRight">
+      <div class="col-md-1 text-center"></div>
+      <div class="col-md-2 text-center">
+        <img src="./images/html5.svg" alt="" class="skill-logo" />
+      </div>
+      <div class="col-md-2 text-center">
+        <img src="./images/css3.svg" alt="" class="skill-logo" />
+      </div>
+      <div class="col-md-2 text-center">
+        <img src="./images/jquery.jpg" alt="" class="skill-logo" />
+      </div>
+      <div class="col-md-2 text-center">
+        <img src="./images/js.svg" alt="" class="skill-logo" />
+      </div>
+      <div class="col-md-2  text-center">
+        <img src="./images/1200px-React.svg.png" alt="" class="skill-logo" />
+      </div>
+      <div class="col-md-1 text-center"></div>
+    </div>
+    <div class="separate"></div>
+    <div class="row animated bounceInLeft">
+      <div class="col-md-1 text-center"></div>
+      <div class="col-md-2 text-center">
+        <img src="./images/bootstrap.jpg" alt="" class="skill-logo" />
+      </div>
+      <div class="col-md-2 text-center">
+        <img
+          src="./images/vuejs2-victorroblesweb.jpg"
+          alt=""
+          class="skill-logo"
+        />
+      </div>
+      <div class="col-md-2 text-center">
+        <img src="./images/WordPress.svg.png" alt="" class="skill-logo" />
+      </div>
+      <div class="col-md-2 text-center">
+        <img src="./images/mysql.jpg" alt="" class="skill-logo" />
+      </div>
+      <div class="col-md-2  text-center">
+        <img src="./images/electron.png" alt="" class="skill-logo" />
+      </div>
+      <div class="col-md-1 text-center"></div>
+    </div>
+    <div class="separate"></div>
+    <div class="row animated bounceInUp">
+      <div class="col-md-1 text-center"></div>
+      <div class="col-md-2 text-center">
+        <img src="" alt="" class="skill-logo" />
+      </div>
+      <div class="col-md-2 text-center">
+        <img src="./images/apache.png" alt="" class="skill-logo" />
+      </div>
+      <div class="col-md-2 text-center">
+        <img src="./images/logo_php-600x600.png" alt="" class="skill-logo" />
+      </div>
+      <div class="col-md-2 text-center">
+        <img src="./images/agile.jpg" alt="" class="skill-logo" />
+      </div>
+      <div class="col-md-2  text-center">
+        <img src="" alt="" class="skill-logo" />
+      </div>
+      <div class="col-md-1 text-center"></div>
+    </div>
+    <div class="separate"></div>
+    <div class="text-center aboutus">
+      <h3 id="Port">Some of my work, and Experience</h3>
+    </div>
+    <div class="separate"></div>
+
+    <div class="row text-center">
+      <div class="col-3 ">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./images/rwasport.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">RWAsport</h5>
+            <p class="card-text">
+              Proyect made with Html, Css, Js, Bootstrap, Firebase
+            </p>
+            <a href="http://rwasport.com/" class="btn btn-primary"
+              >Go See it!</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./images/tebuscodpto.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">TebuscoDpto</h5>
+            <p class="card-text">
+              Webapp with React, Firebase, Bootstrap
+            </p>
+            <a href="https://tebuscodpto.com/" class="btn btn-primary"
+              >Go see it!</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./images/sweetmama.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">SweetMama</h5>
+            <p class="card-text">
+              Project done with Html, Css, Bootstrap
+            </p>
+            <a href="http://sweetmama.net/" class="btn btn-primary"
+              >Go see it!</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./images/break.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Tomateunbreak</h5>
+            <p class="card-text">
+              FullStack Project with WordPress
+            </p>
+            <a href="#" class="btn btn-primary">Go see it!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="separate"></div>
+    <div class="row  text-center">
+      <div class="col-3 align-item-center">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./images/appandroid.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Android App</h5>
+            <p class="card-text">
+              Proyect made with Apache Cordova for GrupoRTS
+            </p>
+            <a href="http://gruports.com/" class="btn btn-primary"
+              >Go See it!</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./images/gruports.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">GrupoRTS</h5>
+            <p class="card-text">
+              Front end developer & QA Manager
+            </p>
+            <a
+              href="https://www.gruports.com/our-team.php"
+              class="btn btn-primary"
+              >Go see it!</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./images/mailcenter.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Mail center group</h5>
+            <p class="card-text">
+              FullStack Project with WordPress
+            </p>
+            <a href="http://www.mailcentergroup.com.ar/" class="btn btn-primary"
+              >Go see it!</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./images/electro2n.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Electron Desktop App</h5>
+            <p class="card-text">
+              Electron Desktop App for GrupoRTS
+            </p>
+            <a href="#" class="btn btn-primary">Go see it!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="separate"></div>
+    <div class="text-center aboutus">
+      <h3>Courses and education</h3>
+    </div>
+    <div class="separate"></div>
+    <div class="container-fluid">
+      <ol class="list ">
+        <li class="item">
+          <h2 class="headline">Web development with PHP y MySQL</h2>
+          <span
+            >Universidad Tecnológica Nacional Facultad Regional Resistencia
+            Chaco - UTN FRRe (IN COURSE)</span
+          >
+        </li>
+        <li class="item ">
+          <h2 class="headline">Software Tester - QA Manager</h2>
+          <span
+            >Universidad Tecnológica Nacional Facultad Regional Resistencia
+            Chaco - UTN FRRe</span
+          >
+        </li>
+        <li class="item">
+          <h2 class="headline">CS50's Introduction to Computer Science</h2>
+          <span>edX - HarvardX </span>
+        </li>
+        <li class="item">
+          <h2 class="headline">
+            Practical Ethical Hacking - The Complete Course
+          </h2>
+          <span>Udemy</span>
+        </li>
+        <li class="item">
+          <h2 class="headline">Javascript & React JS</h2>
+          <span>Escuela Dev Rock</span>
+        </li>
+        <li class="item">
+          <h2 class="headline">HTML, Css & Bootstrap</h2>
+          <span>Escuela Dev Rock</span>
+        </li>
+      </ol>
+    </div>
+    <div class="separate"></div>
+    <div class="text-center aboutus">
+      <h3 id="Contact">Social and Contact</h3>
+    </div>
+    <div class="separate"></div>
+    <div class="row">
+      <div class="col-md-1 text-center"></div>
+      <div class="col-md-2 text-center">
+        <a href="https://twitter.com/PoleselF"><img src="./images/iconfinder_03-twitter_104501.png" alt="" class="skill-logo" /></a>
+      </div>
+      <div class="col-md-2 text-center">
+        <a href="https://github.com/poleselfg"><img src="./images/iconfinder_github_1220369.png" alt="" class="skill-logo" /></a>
+      </div>
+      <div class="col-md-2 text-center">
+        <a href="mailto:poleself@gmail.com"><img src="./images/iconfinder_mail-24_103176.png" alt="" class="skill-logo" /></a>
+      </div>
+      <div class="col-md-2 text-center">
+        <a href="https://www.linkedin.com/in/federico-polesel-720631186/"> <img src="./images/iconfinder_social-linkedin_216394.png" alt="" class="skill-logo" /></a>
+      </div>
+      <div class="col-md-2  text-center">
+        <a href="https://wa.me/5491161481923"><img src="./images/iconfinder_Whatsapp_104801.png" alt="" class="skill-logo" /></a>
+      </div>
+      <div class="col-md-1 text-center"></div>
+    </div>
+    <div class="separate"></div>
+    <div class="separate"></div>
+    <p class="text-center">Developed by Pole</p>
+  </body>
+</html>
